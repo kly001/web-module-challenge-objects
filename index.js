@@ -108,11 +108,16 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+function getReviewByIndex(arr,index) {
+  for(let i=0; i<arr.length; i++){
+    if (arr[i] === arr[index]){
+      return `${arr[index].name} gave the restaurant a ${arr[index].rating} star review, and their feedback was: ${arr[index].feedback}`
+    }
+  }
+
 }
 
-
+console.log(getReviewByIndex(reviews, 4))
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
